@@ -1,0 +1,30 @@
+nav {
+    height: 40px;
+  }
+  
+  nav ul {
+    text-align: right;
+    display: flex;
+    padding: 0 70px;
+    list-style: none;
+    justify-content: space-between;
+    line-height: 40px;
+    font-size: 17px;
+    margin: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #da0f0f;
+  }
+
+#name {
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #da0f0f, #fda90c, #fff126, rgb(68, 31, 201));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
