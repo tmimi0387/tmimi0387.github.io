@@ -1,3 +1,7 @@
+body {
+    background-color: #0e0ba7;
+}
+
 .menu {
     font-size: 12px;
     padding: 0;
@@ -22,7 +26,7 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
 }
 
