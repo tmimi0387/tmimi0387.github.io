@@ -1,6 +1,6 @@
 # tmimi0387.github.io
 
-This is my `portfolio` of work I've completed over the course of my learning.
+This is my `portfolio` of work I've completed over the course of my self learning. My college coursework will be added as I learn.
 
 ### [Recipe Website](https://jsbin.com/lidaciy/9)
 
