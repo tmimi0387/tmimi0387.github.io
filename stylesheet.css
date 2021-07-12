@@ -2,7 +2,7 @@ nav {
     height: 40px;
   }
   
-  nav ul {
+nav ul {
     text-align: right;
     display: flex;
     padding: 0 70px;
@@ -11,15 +11,15 @@ nav {
     line-height: 40px;
     font-size: 17px;
     margin: 0;
-  }
+}
   
-  nav a {
+nav a {
     text-decoration: none;
-  }
+}
   
-  nav a:hover {
+nav a:hover {
     color: #da0f0f;
-  }
+}
 
 #name {
     font-size: 30px;
