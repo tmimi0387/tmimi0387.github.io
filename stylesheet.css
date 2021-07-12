@@ -48,5 +48,6 @@ body {
 }
 
 .logo {
+    width: 100%;
     margin: auto;
 }
