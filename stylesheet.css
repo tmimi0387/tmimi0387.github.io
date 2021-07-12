@@ -4,6 +4,7 @@ nav {
   }
   
 nav ul {
+    width: 50%;
     text-align: right;
     display: flex;
     padding: 0 70px;
