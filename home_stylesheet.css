@@ -1,0 +1,54 @@
+body {
+    background-color: #000000;
+}
+
+#menu {
+    width: 100%;
+    font-size: 20px;
+    list-style: none;
+    height: 40px;
+    
+}
+  
+#menu ul {
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+    line-height: 40px;
+    text-align: right;
+}
+  
+#menu ul li {
+    display: inline;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #ffef15;
+}
+  
+#menu a:hover {
+    color: #da0f0f;
+}
+  
+#name {
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom right, #a80e0e, #db920a, #fff126, #441fc9);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+.logo img{
+    width: 250px;
+    height: 250px;
+    margin: 20px auto 0 auto;
+    display: inline-flex;
+    position: relative;
+}
+
+#slogan {
+    color: #ffff00; 
+    text-align: center;
+}
+
