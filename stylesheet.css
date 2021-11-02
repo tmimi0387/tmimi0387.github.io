@@ -32,15 +32,15 @@ body {
 }
   
 .name {
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
-    background: linear-gradient(to bottom right, #aa0adb, #0a8edb, #aa0adb);
+    background: linear-gradient(to bottom, #aa0adb, #0a8edb, #aa0adb);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
 }
 
 .slogan {
-    color: #0a8edb; 
+    color: #0a76b4; 
     text-align: center;
 }
 
@@ -99,8 +99,29 @@ body {
     width: 100%;
     display: inline-flex;
     justify-content: space-between;
+    text-align: center;
+    margin-top: 3em;
 }
 
 .website {
     width: 33%;
+    margin: 10px 35px;
+    display: inline;
+}
+
+.website a {
+    text-decoration: none;
+    font-size: 23px;
+    color: #0a76b4;
+}
+
+.website a:hover {
+    color: #0b4363;
+    text-decoration: underline;
+}
+
+.website img {
+    width: 350px;
+    height: 250px;
+    margin: 35px auto;
 }
