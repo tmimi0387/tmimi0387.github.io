@@ -98,7 +98,7 @@ body {
 #work {
     width: 100%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     margin-top: 3em;
 }
@@ -106,7 +106,7 @@ body {
 .website {
     width: 33%;
     margin: 10px 35px;
-    display: inline;
+    display: inline-block;
 }
 
 .website a {
@@ -121,7 +121,7 @@ body {
 }
 
 .website img {
-    width: 350px;
-    height: 250px;
+    width: 450px;
+    height: 275px;
     margin: 35px auto;
 }
