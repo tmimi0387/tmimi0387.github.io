@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<body id="register">
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="pictures/logo.png" alt="Foodar Logo"/></a>
+        </div>
+    </header>
+    <div>
+        <h1>Register</h1>
+        <hr style="border: 1px solid #a8a6a6; width: 90%;">
+    </div>
+    <div class="formWrapper">
+        <p>Please fill out the form below</p>
+        <form method="GET" action>
+            <div class="formBox">
+                <h4>Details</h4>
+                <div class="row">
+                    <input type="email" name="email" placeholder="Email">
+                </div>
+                <div class="row">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <div class="row">
+                    <input type="text" name="firstName" placeholder="First Name">
+                </div>
+                <div class="row">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <div class="formBox">   
+                <h4>Address</h4>
+                <div class="row">
+                    <input type="text" name="address" placeholder="Address">
+                </div>
+                <div class="row">
+                    <input type="text" name="street" placeholder="Street">
+                </div>
+                <div class="row">
+                    <input type="text" name="city" placeholder="City">
+                </div>
+                <div class="row">
+                    <input type="text" name="zipcode" maxlength="5" placeholder="Zipcode">
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <button style="text-align: left">Register</button>
+        </form>
+    </div>
+    <footer>
+        <div class=footerLinks>
+            <div id="siteMap" class="links">
+                <ul>
+                    <li><h3 style="text-transform:uppercase">Site Map</h3></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="about.html">How It All Works</a></li>
+                </ul>
+            </div>
+
+            <div id="legal" class="links">
+               <ul>
+                    <li><h3 style="text-transform:uppercase;">Legal</h3></li>
+                    <li><a href="privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="Terms">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div id="copyright">
+                <h2>FOODAR</h2>
+                <h4>FOOD IS LIFE</h4>
+                <p>&copy;2021. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+      
+</head>
+<body>
+    <div id="bannerAd">
+        <button id="close-button" onclick="close()">X</button>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="pictures/logo.png" alt="Foodar Logo"/></a>
+        </div>
+        <nav class="menu">
+            <ul class="links">
+                <li><a href="signin">Sign-In</a></li>
+                <li>|</li>
+                <li><a href="register.html">register</a></li>
+                <li>|</li>
+                <li><a href="request.html">Request</a></li>
+            </ul>
+            <br/>
+            <br/>
+        </nav>
+    </header>
+        <section id=topPic>
+            <!--<img src="pictures/steakDinner.jpg" alt="Steak with potatoes and tomatoes"/>-->
+            <h1>Your Next Meal Is Waiting</h1>
+        </section>
+        <section>
+            <h1 class="top">How It Works</h1>
+            <hr style="border: 1px solid #a8a6a6; width: 90%;"/>
+            <div class="homeBody">
+                <div id="picOfMenu">
+                    <img src="pictures/foodarMenu.jpg" alt="Menu"/>
+                </div>
+                <div id="learnMore">
+                    <p><span style="font-weight:bold">The process is simple.</span>We deliver whatever food you order from our partner restaurants. Treating you with utmost
+                    respect and exceptional hospitality, we provide you with an unparalleled experience. Try out Foodar today!!</p>
+                    <ol>
+                        <li>Place your order</li>
+                        <li>Find a driver</li>
+                        <li>Place pickup request</li>
+                    </ol>
+                    <button><a href="about.html">Learn More</a></button>
+                </div>
+            </div>
+
+        </section>
+        <section>
+                <h1 class="top">Feature Restaurants</h1>
+                <hr style="border: 1px solid #a8a6a6; width: 90%;"/>
+                <br/>
+            <div class="featured">
+                <div id="fish">
+                    <img src="pictures/fishnchips.jpg" alt="Fish And Chips"/>
+                    <h3>FISH & CHIPS GALLORE!</h3>
+                    <P>Since 1968, Fish & Chips Gallore! has served the bay area with its palatable array of fried fish and sailor's choice dessert.</P>
+                    <P>Order today and recieve 15% off your total meal and we'll throw in our famous hush puppies as a thank you.</P>
+                </div>
+                <div id="burger">
+                    <img src="pictures/bubbaJoes.jpg" alt="Bubba Joe's Burger"/>
+                    <h3>BUBBA JOE'S</h3>
+                    <P>When you actually, really desire a burger, you order from Bubba Joe's. Unlike the fast food business, we eat our own food and love it.</P>
+                    <P>Order 2 burgers and get a small fry on us today.</P>
+                </div>
+                <div id="parfait">
+                    <img src="pictures/desserts.jpg" alt="Berry Parfait"/>
+                    <h3>AWWW YEAH DESSERTS</h3>
+                    <p>Welcome to your favorite part of dinner, lunch, breakfast, brunch, any meal. We know you don't need encouragement from us to eat our desserts. Look at the picture. You know you want it.</p>
+                    <p>Just for you, we'll knock off 10% to make your wallet feel good too.</p>
+                </div>
+            </div>
+        </section>
+        <section class="city">
+            <h4>FIND THE NEAREST CITY</h4>
+            <p>Enter your zipcode below</p>
+            <form method="GET" action>
+                <div class="zipcode">
+                    <div id="zip">
+                        <input type="text" name="zip" maxlength="5">
+                    </div>
+                    <div id="go">
+                        <button>GO</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    <footer>
+        <div class=footerLinks>
+            <div id="siteMap" class="links">
+                <ul>
+                    <li><h3 style="text-transform:uppercase">Site Map</h3></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="about.html">How It All Works</a></li>
+                </ul>
+            </div>
+
+            <div id="legal" class="links">
+               <ul>
+                    <li><h3 style="text-transform:uppercase;">Legal</h3></li>
+                    <li><a href="privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="Terms">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div id="copyright">
+                <h2>FOODAR</h2>
+                <h4>FOOD IS LIFE</h4>
+                <p>&copy;2021. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

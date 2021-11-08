@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Request</title>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <script src="getTotal.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="home.html"><img src="pictures/logo.png" alt="Foodar Logo"/></a>
+        </div>
+    </header>
+        <div>
+            <h1 class="top">Request</h1>
+            <hr style="border: 1px solid #a8a6a6; width: 90%;"/>
+            <br/>
+            <br/>
+        </div>
+        <div class="formWrapper">
+            <p>Please fill out the form below</p>
+            <form method="GET" action>
+                <div class="formBox">
+                    <h4>Address:</h4>
+                    <div class="optionRow">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <h4>Choose Your Style:</h4>
+                        <div class="optionsBox" onclick="totalPrice()">
+                            <div class="options">
+                                <label for="classic"><h5>Classic</h5> This is a classic treatment</label><br>
+                                <input type="radio" id="classic" name="style" value="3.00"  >
+                            </div>
+                            <div class="options">
+                                <label for="premium"><h5>Premium</h5> Pinky's up</label><br>
+                                <input type="radio" id="premium" name="style" value="5.00">
+                            </div>
+                            <div class="options">
+                                <label for="royal"><h5>Royal</h5> Your food is served on a silver platter... Literally</label>
+                                <input type="radio" id="royal" name="style" value="7.00">
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="formBox">
+                    <h4>Restaurant:</h4>
+                    <div class="optionRow">
+                        <input type="text" name="restaurant" placeholder="Name">
+                    </div>
+                    <h4>Select Tip Amount:</h4>
+                    <div class="optionsBox" onclick="totalPrice()">
+                        <div class="options">
+                            <label for="10"><h5>10%</h5> They did their job</label><br>
+                            <input type="radio" id="_10" name="tip" value=".1" onclick="totalPrice()">
+                        </div>
+                        <div class="options">    
+                            <label for="15"><h5>15%</h5> They made you feel special</label><br>
+                            <input type="radio" id="_15" name="tip" value=".15">
+                        </div>
+                        <div class="options">    
+                            <label for="royal"><h5>20%</h5> I wanna give them more, but this is all I have!</label>
+                            <input type="radio" id="_20" name="tip" value=".2">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 id="price">Total: <span id="total"></span> </h4>
+                </div>
+                <div id="request">
+                    <button>Request</button>
+                </div>
+            </form>
+        </div>
+    <footer>
+        <div class=footerLinks>
+            <div id="siteMap" class="links">
+                <ul>
+                    <li><h3 style="text-transform:uppercase">Site Map</h3></li>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="about.html">How It All Works</a></li>
+                </ul>
+            </div>
+
+            <div id="legal" class="links">
+               <ul>
+                    <li><h3 style="text-transform:uppercase;">Legal</h3></li>
+                    <li><a href="privacyPolicy">Privacy Policy</a></li>
+                    <li><a href="Terms">Terms and Conditions</a></li>
+                </ul>
+            </div>
+            
+            <div id="copyright">
+                <h2>FOODAR</h2>
+                <h5>FOOD IS LIFE</h5>
+                <p>&copy;2021. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
