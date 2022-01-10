@@ -1,13 +1,14 @@
 function validateForm() {
     var valid = 1;
-    var email = document.getElementById('email');
+    var email = document.getElementsByName('email');
     var email_validation = document.getElementById("email_validation");
-    var name = document.getElementById('name');
+    var name = document.getElementsByName('name');
     var name_validation = document.getElementById("name_validation");
+    var message = document.getElementsByName("message");
     var message_validation = document.getElementById("message_validation");
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
     
-    if (name.value === "") {
+    if (name.value == "") {
       valid = 0;
       name_validation.innerHTML = "Field Required";
       name_validation.style.display = "block";
@@ -17,7 +18,7 @@ function validateForm() {
       name_validation.parentNode.style.backgroundColor = "transparent";
     }
     
-    if (message.value === "") {
+    if (message.value == "") {
       valid = 0;
       message_validation.innerHTML = "Field Required";
       message_validation.style.display = "block";
@@ -27,7 +28,7 @@ function validateForm() {
       message_validation.parentNode.style.backgroundColor = "transparent";
     }
     
-    if (email.value === "") {
+    if (email.value == "") {
       valid = 0;
       email_validation.innerHTML = "Field Required";
       email_validation.style.display = "block";
