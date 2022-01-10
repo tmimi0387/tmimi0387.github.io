@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact</title>
+    <link rel="stylesheet" href="stylesheet.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+    <script src="contact_form.js"></script>
+    <script src="contact_form.php"></script>
+</head>
+<body style="background-color: #aae7ff;">
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li>|</li>
+                <li><a href="about.html">About Me</a></li>
+                <li>|</li>
+                <li><a href="projects.html">Projects</a></li>
+                <li>|</li>
+                <li><a href="certificate.html">Certificate</a></li>
+                <li>|</li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 id="contact">Contact Me</h2>
+    <div class="formBox">   
+        <h3>Fill out the form below</h3>
+        <form action="mail.php" method="POST">
+            <div class="row">
+                <p>Name</p> <input type="text" name="name" placeholder="John Doe" required>
+                <span id="name_validation" class="error"></span>
+            </div>
+            <div class="row">
+                <p>Email</p> <input type="text" name="email" placeholder="mail@example.com" required>
+                <span id="email_validation" class="error"></span>
+            </div>
+            
+            <div class="row">
+                <p>Service Requested</p>kjzz
+                <select name="service" size="1">
+                <option value="Low">Create Website</option>
+                <option value="Normal">Modify Website</option>
+                <option value="High">Edit Content</option>
+                <option value="Emergency">Other</option>
+                </select>
+                <br />
+            </div>
+            
+            <div class="row">
+                <p>Message</p><textarea name="message" rows="6" cols="25" placeholder="Enter your message here" required></textarea><br />
+                <span id="message_validation" class="error"></span>
+            </div>
+            <div id="button">
+                <input type="submit" value="Send" onclick="validateForm()"><input type="reset" value="Clear">
+            </div>
+            </form>
+    </div>
+</body>
+</html>
