@@ -24,7 +24,7 @@
     <h2 id="contact">Contact Me</h2>
     <div class="formBox">   
         <h3>Fill out the form below</h3>
-        <form action="/contact_form.php" method="POST">
+        <form action="/contact_form.php" autocomplete="off" method="POST">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" value="John Doe"><br>
             <label for="email">Email:</label><br>
@@ -36,7 +36,11 @@
                 <option value="Edit Content">
                 <option value="Other">
             </datalist>
-            <textarea for="message" name="message" rows="6" cols="25">Enter Your Message Here</label><br></textarea>
+            <textarea for="message" name="message" rows="6" cols="25">Enter Your Message Here</textarea><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formmethod="post" value="Submit using POST">
+            <input type="clear" value="Clear">    
+
         </form>
     </body>
 </html>
