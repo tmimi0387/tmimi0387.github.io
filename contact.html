@@ -25,36 +25,18 @@
     <div class="formBox">   
         <h3>Fill out the form below</h3>
         <form action="/contact_form.php" method="POST">
-            <div class="row">
-                <p>Name</p> <input type="text" name="name" placeholder="John Doe" required>
-                <span id="name_validation" class="error"></span>
-            </div>
-            <div class="row">
-                <p>Email</p> <input type="text" name="email" placeholder="mail@example.com" required>
-                <span id="email_validation" class="error"></span>
-            </div>
-            
-            <div class="row">
-                <p>Service Requested</p>
-                <select name="service" size="1">
-                <option value="Low">Create Website</option>
-                <option value="Normal">Modify Website</option>
-                <option value="High">Edit Content</option>
-                <option value="Emergency">Other</option>
-                </select>
-                <br />
-            </div>
-            
-            <div class="row">
-                <p>Message</p><textarea name="message" rows="6" cols="25" placeholder="Enter your message here" required></textarea><br />
-                <span id="message_validation" class="error"></span>
-            </div>
-            <div id="button">
-                <input type="submit" value="Send" onclick="validateForm()"><input type="reset" value="Clear">
-            </div>
-            </form>
-    </div>
-
-    <script src="contact_form.php"></script>
-</body>
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value="John Doe"><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" value="mail@example.com"><br>
+            <input list="services">
+            <datalist id="services">
+                <option value="Create Website">
+                <option value="Modify Website">
+                <option value="Edit Content">
+                <option value="Other">
+            </datalist>
+            <textarea for="message" name="message" rows="6" cols="25">Your Message:</label><br></textarea>
+        </form>
+    </body>
 </html>
