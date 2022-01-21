@@ -1,3 +1,6 @@
+const form = document.querySelector("form"),
+statusTxt=form.querySelector(".button-area span");
+form.onsubmit = (e)=> {
 function validateForm() {
     var valid = 1;
     var email = document.getElementsByName('email');
@@ -50,3 +53,4 @@ function validateForm() {
     if (!valid)
       return false;
   }
+}
