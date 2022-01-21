@@ -24,7 +24,7 @@
     <h2 id="contact">Contact Me</h2>
     <div class="formBox">   
         <h3>Fill out the form below</h3>
-        <form action="contact_form.php" method="POST">
+        <form name="myForm" action="contact_form.php" method="POST">
             <div class="row">
                 <p>Name</p> <input type="text" name="name" placeholder="John Doe" required>
                 <span id="name_validation" class="error"></span>
@@ -37,10 +37,12 @@
             <div class="row">
                 <p>Service Requested</p>
                 <select name="service" size="1">
+                <option value="">--Service Requested--</option>
                 <option value="Low">Create Website</option>
                 <option value="Normal">Modify Website</option>
                 <option value="High">Edit Content</option>
                 <option value="Emergency">Other</option>
+                <span id="service_validation" class="error"></span>
                 </select>
                 <br />
             </div>

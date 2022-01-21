@@ -7,9 +7,21 @@ function validateForm() {
     var email_validation = document.getElementById("email_validation");
     var name = document.getElementsByName('name');
     var name_validation = document.getElementById("name_validation");
+    var service = document.getElementsByName('service');
+    var service_validation = document.getElementById("service_validation");
     var message = document.getElementsByName("message");
     var message_validation = document.getElementById("message_validation");
     var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+    
+    if (service.value == "") {
+      alert("Please select a service");
+      document.myForm.service.focus();
+      service_validation.style.display = "block";
+      service_validation.parentNode.style.backgroundColor = "#FFDFDF";
+    } else {
+      service_validation.style.display = "none";
+      service_validation.parentNode.style.backgroundColor = "transparent";
+    }
     
     if (name.value == "") {
       valid = 0;
