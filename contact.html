@@ -26,9 +26,9 @@
         <h3>Fill out the form below</h3>
         <form action="/contact_form.php" autocomplete="off" method="POST">
             <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" value="John Doe"><br>
+            <input type="text" id="name" name="name" placeholder="John Doe"><br>
             <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" value="mail@example.com"><br>
+            <input type="email" id="email" name="email" placeholder="mail@example.com"><br>
             <input list="services">
             <datalist id="services">
                 <option value="Create Website">
@@ -36,9 +36,9 @@
                 <option value="Edit Content">
                 <option value="Other">
             </datalist>
-            <textarea for="message" name="message" rows="6" cols="25">Enter Your Message Here</textarea><br><br>
+            <textarea for="message" name="message" rows="6" cols="25" placeholder="Enter your message here"></textarea><br><br>
             <input type="submit" formmethod="post" value="Submit">
-            <input type="clear" value="Clear">    
+            <button type="reset" value="Clear">    
 
         </form>
     </body>
