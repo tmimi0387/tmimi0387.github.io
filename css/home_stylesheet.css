@@ -53,3 +53,10 @@ body {
     font-size: 19px;
 }
 
+p {
+    color: #fff;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+}
+
