@@ -4,7 +4,7 @@ body {
 
 #menu {
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     list-style: none;
     height: 40px;
     
@@ -13,16 +13,18 @@ body {
 #menu ul {
     padding: 0;
     margin: 0;
-    justify-content: space-between;
     line-height: 40px;
     text-align: right;
 }
   
 #menu ul li {
     display: inline;
+    justify-content: space-evenly;
+    margin-right: 5px;
 }
 
-#menu a {
+#menu a,
+#menu li {
     text-decoration: none;
     color: #ffef15;
 }
